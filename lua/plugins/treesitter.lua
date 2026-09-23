@@ -19,6 +19,8 @@ return {
       "bash", "c", "json", "yaml", "toml", "make",
       "markdown", "markdown_inline",    -- notes / READMEs
       "gitcommit", "diff",
+      "javascript", "typescript", "tsx", -- frontend: JS/TS(X)
+      "html", "css",                     -- frontend: markup/styles
     })
 
     -- Whenever a file opens, turn on tree-sitter highlighting + indentation

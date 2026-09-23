@@ -24,6 +24,9 @@ return {
         "lua_ls", -- Lua (so editing this config is pleasant too)
         "marksman", -- Markdown: heading/link completion, jump to headings
         "harper_ls", -- English grammar + spelling (British) in prose and code comments
+        "ts_ls", -- JavaScript / TypeScript
+        "html", -- HTML
+        "cssls", -- CSS
       },
       automatic_enable = true, -- start installed servers automatically
     },
