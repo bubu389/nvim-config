@@ -22,6 +22,7 @@ return {
       ensure_installed = {
         "gopls",  -- Go
         "lua_ls", -- Lua (so editing this config is pleasant too)
+        "marksman", -- Markdown: heading/link completion, jump to headings
       },
       automatic_enable = true, -- start installed servers automatically
     },

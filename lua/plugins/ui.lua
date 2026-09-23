@@ -42,6 +42,7 @@ return {
         { "<leader>c", group = "code" },
         { "<leader>f", group = "find" },
         { "<leader>g", group = "git" },
+        { "<leader>m", group = "markdown" },
         { "<leader>r", group = "run (Go)" },
         { "<leader>s", group = "split" },
         { "<leader>t", group = "terminal" },

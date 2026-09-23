@@ -40,6 +40,17 @@
 | `<Space>fd` | List all errors |
 | (on save) | Imports are organised and the file is gofmt'ed automatically |
 
+## Markdown
+Headings, checkboxes, tables and code blocks render right in the editor as you write;
+the line under the cursor shows the raw text.
+
+| Keys | Action |
+|---|---|
+| `<Space>mr` | Toggle in-editor rendering |
+| `<Space>mp` / `<Space>mc` | Open / close live preview in the browser (updates as you type) |
+| `<Space>mo` | Outline: jump to a heading |
+| `gd` | Follow a link to its heading or file |
+
 ## Toggles & ambience
 | Keys | Action |
 |---|---|
