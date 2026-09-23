@@ -51,6 +51,15 @@ the line under the cursor shows the raw text.
 | `<Space>mo` | Outline: jump to a heading |
 | `gd` | Follow a link to its heading or file |
 
+## Writing better English
+Harper checks grammar, spelling and style in British English: in Markdown, text files,
+commit messages, and the comments of code files. Mistakes get a blue underline.
+
+| Keys | Action |
+|---|---|
+| `<Space>ca` | On an underlined word: see fixes, or add the word to your dictionary |
+| `]d` / `[d` / `<Space>cd` | Next / previous mistake / explain it |
+
 ## Toggles & ambience
 | Keys | Action |
 |---|---|

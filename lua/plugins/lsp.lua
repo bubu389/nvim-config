@@ -23,6 +23,7 @@ return {
         "gopls",  -- Go
         "lua_ls", -- Lua (so editing this config is pleasant too)
         "marksman", -- Markdown: heading/link completion, jump to headings
+        "harper_ls", -- English grammar + spelling (British) in prose and code comments
       },
       automatic_enable = true, -- start installed servers automatically
     },
@@ -57,6 +58,26 @@ return {
               parameterNames = true,
               rangeVariableTypes = true,
             },
+          },
+        },
+      })
+
+      -- ── harper_ls (English writing checker) ───────────────────────────────
+      -- Underlines grammar, spelling and style mistakes in Markdown, text,
+      -- commit messages, and the comments/strings of code files.
+      -- Put the cursor on a mistake and press <Space>ca to see fixes.
+      -- Docs: https://writewithharper.com/docs/integrations/neovim
+      vim.lsp.config("harper_ls", {
+        filetypes = vim.list_extend(
+          vim.deepcopy(vim.lsp.config.harper_ls.filetypes or {}),
+          { "text", "yaml" } -- plus plain .txt notes and YAML comments
+        ),
+        settings = {
+          ["harper-ls"] = {
+            dialect = "British",               -- colour, organise, centre...
+            diagnosticSeverity = "information", -- blue underline, not a red error
+            userDictPath = vim.fn.stdpath("config") .. "/spell/harper-dict.txt", -- "add to dictionary" words
+            isolateEnglish = true,             -- ignore non-English bits in code
           },
         },
       })
