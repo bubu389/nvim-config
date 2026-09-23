@@ -60,6 +60,20 @@ commit messages, and the comments of code files. Mistakes get a blue underline.
 | `<Space>ca` | On an underlined word: see fixes, or add the word to your dictionary |
 | `]d` / `[d` / `<Space>cd` | Next / previous mistake / explain it |
 
+## Claude Code
+Claude's edits open as a side-by-side diff for you to accept or reject.
+Open Claude with `<Space>ac`, or run `claude` in any terminal opened from Neovim
+(e.g. `<Space>tv`) and type `/ide` to connect it.
+
+| Keys | Action |
+|---|---|
+| `<Space>ac` / `<Space>af` | Toggle Claude (right split) / jump to it |
+| `:w` or `<Space>aa` | Accept Claude's change (edit it first if you like) |
+| `<Space>ad` | Reject Claude's change |
+| `<Space>as` (visual) | Send the selection to Claude |
+| `<Space>ab` | Add the current file to the chat |
+| `<Space>ar` / `<Space>aC` | Resume a past chat / continue the last one |
+
 ## Toggles & ambience
 | Keys | Action |
 |---|---|
