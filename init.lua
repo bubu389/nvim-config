@@ -593,7 +593,7 @@ setup_dynamic_statusline()
 local function setup_lsp()
   -- Enable language servers (configs come from nvim-lspconfig's lsp/*.lua presets,
   -- picked up automatically since that package is on the runtimepath)
-  vim.lsp.enable({ 'pyright' })
+  vim.lsp.enable({ 'pyright', 'gopls' })
 
   -- Show diagnostic signs in the gutter
   local signs = {
