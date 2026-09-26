@@ -27,6 +27,7 @@ return {
         "ts_ls", -- JavaScript / TypeScript
         "html", -- HTML
         "cssls", -- CSS
+        "texlab", -- LaTeX: command + \cite{} completion (see latex.lua)
       },
       automatic_enable = true, -- start installed servers automatically
     },

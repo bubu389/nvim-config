@@ -51,6 +51,21 @@ the line under the cursor shows the raw text.
 | `<Space>mo` | Outline: jump to a heading |
 | `gd` | Follow a link to its heading or file |
 
+## LaTeX
+VimTeX rebuilds the PDF every time you save and shows it in Zathura. Put Zathura
+beside the terminal for a side-by-side view. `texlab` completes commands and
+`\cite{}` keys from your `.bib` file.
+
+| Keys | Action |
+|---|---|
+| `<Space>ll` | Start / stop building on every save (opens the PDF) |
+| `<Space>lv` | Jump the PDF to the line under the cursor |
+| Ctrl + click (in Zathura) | Jump Neovim to that line |
+| `<Space>lt` | Table of contents: jump to a section |
+| `<Space>le` | Show build errors |
+| `<Space>lk` | Stop building |
+| `<Space>lc` | Clean up build files (`.aux`, `.log` …) |
+
 ## Writing better English
 Harper checks grammar, spelling and style in British English: in Markdown, text files,
 commit messages, and the comments of code files. Mistakes get a blue underline.

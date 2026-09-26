@@ -22,7 +22,7 @@ autocmd("FileType", {
 -- Turn on wrapping + spell check for prose (notes, READMEs, commit messages).
 autocmd("FileType", {
   group = augroup,
-  pattern = { "markdown", "text", "gitcommit" },
+  pattern = { "markdown", "text", "gitcommit", "tex" },
   callback = function()
     vim.opt_local.wrap = true
     vim.opt_local.spell = true
